@@ -1,0 +1,22 @@
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #0A2540;
+padding: 15px 30px;
+}
+
+.menu{
+display: flex;
+list-style: none;
+gap: 20px;
+}
+
+li{
+color: white;
+}
+
+h1{
+color: white;
+margin: 0;    
+}
