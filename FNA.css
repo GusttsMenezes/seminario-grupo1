@@ -6,17 +6,47 @@ background-color: #0A2540;
 padding: 15px 30px;
 }
 
+img{
+width: 250px;
+height: auto;
+background-color: #0A2540;
+}
+
 .menu{
 display: flex;
 list-style: none;
 gap: 20px;
+position: absolute;
+left: 50%;
+transform: translateX(-50%)
 }
 
 li{
 color: white;
 }
 
-h1{
-color: white;
-margin: 0;    
+.status{
+background-color: #FFFFFF;
+padding: 60px 40px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.icone{
+font-size: 45px;
+color: #7C3AED;
+margin-bottom: 15px;
+}
+
+.status-item h2{
+font-size: 2.5rem;
+color: #111827;
+margin-bottom: 10px;
+}
+
+.status-item p{
+color: #6B7280;
+font-size: 1rem;
 }
