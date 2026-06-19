@@ -141,4 +141,6 @@ header {
 .logo {
     height: 100px;
     width: auto;
+    margin: 0;
+    padding: 0;
 }
