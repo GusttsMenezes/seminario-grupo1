@@ -1,3 +1,7 @@
+*{
+    outline: 1px solid red;
+}
+
 body {
     background: linear-gradient(180deg,
             #f8fafc,
@@ -89,14 +93,14 @@ a:hover {
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: clamp(2rem, 6vw, 4rem);
     color: #0A2540;
 }
 
 .hero p {
     font-size: 1.2rem;
     color: #6B7280;
-    max-width: 300px;
+    max-width: 700px;
     margin: 20px auto;
 }
 
