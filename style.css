@@ -147,19 +147,19 @@ header {
 
 .cursos{
 padding: 80px 10%;
-background: #F5F7FA;
+background: #6B7280;
 }
 
 .cursos h2{
 text-align: center;
 margin-bottom: 40px;
-color: #111827;
+color: black;
 }
 
 .cards{
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-gap: 30px;
+gap: 30px;;
 }
 
 .card{
@@ -205,3 +205,33 @@ border: none;
 border-radius: 8px;
 cursor: pointer;
 }
+
+.hero-sobre {
+    text-align: center;
+    padding: 120px 20px;
+    background-color: #0A2540;
+}
+
+.hero-sobre h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.hero-sobre h3 {
+    color: white;
+}
+
+.hero-sobre p {
+    font-size: 1.2rem;
+    color: #6B7280;
+    max-width: 700px;
+    margin: 20px auto;
+}
+ .hero-content-sobre p::before{
+content: "*";
+color: #7C3AED ;
+font-size: 1.2rem;
+margin-right: 8px;
+vertical-align: middle;
+display: inline-block;
+ }
