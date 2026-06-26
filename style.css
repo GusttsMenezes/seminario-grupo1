@@ -176,6 +176,12 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: .3;
+}
+
+header.scroll{
+background: #081b30;
+box-shadow: 0 8px 20px rgba(0,0,0,.3);
 }
 
 .logo {
@@ -208,6 +214,14 @@ border-radius: 15px;
 overflow: hidden;
 box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
 transition: .3s;
+opacity: 0;
+transform: translateY(50px);
+transition: .6s;
+}
+
+.card.mostrar{
+opacity: 1;
+transform: translateY(0);
 }
 
 .card:hover{
@@ -297,4 +311,17 @@ cursor: pointer;
         grid-template-columns: 1fr;
     }
 
+}
+
+#topo{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+
+    display:none;
+
+    padding:15px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
 }
