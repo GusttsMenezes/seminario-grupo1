@@ -42,6 +42,46 @@ li {
     color: white;
 }
 
+.dropdown {
+position: relative;
+}
+
+.dropdown-menu{
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+
+min-width: 180px;
+
+background: #0d2342;
+border-radius: 10px;
+padding: 10px 0;
+
+box-shadow: 0 10px 20px rgba(0,0,0,.2);
+
+z-index: 1000;
+}
+
+.dropdown-menu li{
+list-style: none;    
+}
+
+.dropdown-menu li a{
+display: block;
+padding: 12px 20px;
+color: white;
+}
+
+.dropdown-menu li a:hover {
+background-color: #13385f;
+
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .status {
     background-color: #FFFFFF;
     padding: 60px 40px;
@@ -171,7 +211,7 @@ transition: .3s;
 }
 
 .card:hover{
-transform: translateY(_10px);
+transform: translateY(-10px);
 }
 
 .card img{
@@ -213,7 +253,7 @@ cursor: pointer;
 }
 
 .hero-sobre h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
 }
 
