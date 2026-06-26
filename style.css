@@ -117,7 +117,7 @@ a:hover {
 }
 
 .status-item {
-    background: white;
+    background: #e2e8f0;
     padding: 30px;
     border-radius: 20px;
     width: 220px;
@@ -147,7 +147,7 @@ header {
 
 .cursos{
 padding: 80px 10%;
-background: #6B7280;
+background: #e2e8f0;
 }
 
 .cursos h2{
@@ -217,21 +217,44 @@ cursor: pointer;
     color: white;
 }
 
-.hero-sobre h3 {
-    color: white;
+.sobre-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 40px;
 }
 
-.hero-sobre p {
-    font-size: 1.2rem;
-    color: #6B7280;
-    max-width: 700px;
-    margin: 20px auto;
+.card-sobre {
+    background: rgba(255, 255, 255, 0.1); /* Fundo sutil */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    background-color: #e2e8f0;
 }
- .hero-content-sobre p::before{
-content: "*";
-color: #7C3AED ;
-font-size: 1.2rem;
-margin-right: 8px;
-vertical-align: middle;
-display: inline-block;
- }
+
+.card-sobre:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-sobre h3 {
+    color: #e2e8f0;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.card-sobre p {
+    color: #FFFFFF;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media(max-width:900px){
+
+    .sobre-container{
+        grid-template-columns: 1fr;
+    }
+
+}
